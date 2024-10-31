@@ -102,6 +102,42 @@ section {
     font-weight: 700;
 }
 
+/* Experience Section */
+#experience .timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid #1ABC9C;
+}
+
+#experience .timeline-item {
+    margin-bottom: 30px;
+}
+
+#experience .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    background-color: #1ABC9C;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+}
+
+#experience h5 {
+    font-weight: 700;
+    color: #1A5276;
+}
+
+#experience p {
+    font-size: 0.95rem;
+}
+
+#experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
 /* Educational Section */
 #learn h4 {
     font-weight: 700;
