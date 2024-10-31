@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Sasha Lyuber - Empowering Social Services with Data Science</title>
     <meta name="description" content="Sasha Lyuber leverages data science and development expertise to enhance social services, creating immediate impact for communities.">
+    <meta name="keywords" content="Sasha Lyuber, Data Scientist, Machine Learning Developer, Social Services, Data Integration">
+    <meta name="author" content="Sasha Lyuber">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -17,6 +19,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- TimelineJS CSS -->
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -64,7 +68,7 @@
         </div>
         <!-- Background Image -->
         <div class="background-image">
-            <img src="images/mountain-background.jpg" alt="Background" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="https://source.unsplash.com/1600x900/?community,technology" alt="Background" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
     </header>
 
@@ -74,14 +78,14 @@
             <h2 class="fw-bold text-center mb-5" data-aos="fade-up">About Me</h2>
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4" data-aos="fade-right">
-                    <img src="images/your-photo.jpg" alt="Sasha Lyuber" class="img-fluid rounded-circle shadow">
+                    <img src="https://source.unsplash.com/400x400/?portrait" alt="Sasha Lyuber" class="img-fluid rounded-circle shadow">
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
                     <p>
-                        Hello! I'm <strong>Sasha Lyuber</strong>, a data engineer and machine learning developer with a passion for enhancing social services. My journey in palliative care ignited a desire to leverage technology to improve community well-being. With expertise in data science and a background in software development, I create solutions that make a real difference.
+                        Hello! I'm <strong>Sasha Lyuber</strong>, a data scientist and machine learning developer with a passion for enhancing social services. My journey in palliative care ignited a desire to leverage technology to improve community well-being. With expertise in data science and a background in software development, I create solutions that make a real difference.
                     </p>
-                    <!-- Interactive Timeline Placeholder -->
-                    <!-- You can implement a timeline here using a library like TimelineJS -->
+                    <!-- Interactive Timeline -->
+                    <div id="timeline-embed" style="width: 100%; height: 600px;"></div>
                     <a href="#contact" class="btn btn-outline-primary mt-3">Get in Touch</a>
                 </div>
             </div>
@@ -120,7 +124,7 @@
                 <!-- Project Card -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+                        <img src="https://source.unsplash.com/600x400/?analytics,data" class="card-img-top" alt="Project 1">
                         <div class="card-body">
                             <h5 class="card-title">Community Outreach Predictor</h5>
                             <p class="card-text">A machine learning model that identifies communities in need for targeted support.</p>
@@ -131,7 +135,7 @@
                 <!-- Project Card -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+                        <img src="https://source.unsplash.com/600x400/?dashboard,data" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title">Real-Time Data Dashboard</h5>
                             <p class="card-text">An interactive dashboard visualizing key metrics for social service organizations.</p>
@@ -142,7 +146,7 @@
                 <!-- Project Card -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+                        <img src="https://source.unsplash.com/600x400/?app,volunteer" class="card-img-top" alt="Project 3">
                         <div class="card-body">
                             <h5 class="card-title">Volunteer Coordination App</h5>
                             <p class="card-text">A mobile app to streamline volunteer management and enhance engagement.</p>
@@ -168,7 +172,8 @@
                 <div class="col-md-6" data-aos="fade-left">
                     <h4>How It Helps Social Services</h4>
                     <p>By analyzing data trends, social services can allocate resources more effectively and predict community needs.</p>
-                    <!-- You can include an infographic here if you have one -->
+                    <!-- Infographic Placeholder -->
+                    <img src="https://source.unsplash.com/600x400/?data,infographic" alt="Data Science Infographic" class="img-fluid mt-3">
                 </div>
             </div>
             <!-- Expandable Content -->
@@ -199,6 +204,7 @@
                     <!-- Testimonial Slide -->
                     <div class="swiper-slide">
                         <div class="testimonial p-4">
+                            <img src="https://source.unsplash.com/80x80/?person" alt="Client Photo" class="rounded-circle mb-3">
                             <p class="text-muted">"Sasha's data solutions transformed how we operate, leading to a 30% increase in efficiency."</p>
                             <h6 class="fw-bold mt-3">Alex Martinez</h6>
                             <p class="text-muted small">Program Manager, Helping Hands Organization</p>
@@ -234,7 +240,7 @@
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                     <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="200">
-                        <p class="text-muted">Or email me directly at <a href="mailto:sasha@example.com">sasha@example.com</a></p>
+                        <p class="text-muted">Or email me directly at <a href="mailto:sasha.lyuber@gmail.com">sasha.lyuber@gmail.com</a></p>
                     </div>
                 </div>
             </div>
@@ -248,7 +254,7 @@
             <div class="mt-2">
                 <a href="https://github.com/slyuber" class="text-white mx-2" target="_blank"><i class="fab fa-github fa-lg"></i></a>
                 <a href="https://linkedin.com/in/slyuber" class="text-white mx-2" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-                <a href="mailto:sasha@example.com" class="text-white mx-2"><i class="fas fa-envelope fa-lg"></i></a>
+                <a href="mailto:sasha.lyuber@gmail.com" class="text-white mx-2"><i class="fas fa-envelope fa-lg"></i></a>
             </div>
         </div>
     </footer>
@@ -262,6 +268,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Lottie Player -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- TimelineJS JS -->
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>

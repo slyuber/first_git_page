@@ -181,6 +181,14 @@ footer a:hover {
     .navbar .nav-link {
         padding-left: 0;
     }
+    #timeline-embed {
+        height: 500px;
+    }
+}
+
+/* TimelineJS Customization */
+#timeline-embed {
+    margin-top: 20px;
 }
 
 /* AOS Animations */
