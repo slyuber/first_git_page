@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sasha Lyuber - Data Science Empowering Social Services</title>
+    <title>Sasha Lyuber - Empowering Social Services with Data Science</title>
+    <meta name="description" content="Sasha Lyuber leverages data science and development expertise to enhance social services, creating immediate impact for communities.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome (for icons) -->
@@ -14,13 +15,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- AOS (Animate On Scroll) CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Sasha Lyuber</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,9 +62,9 @@
             <p class="lead mb-4 animate__animated animate__fadeInUp">Leveraging technology to create immediate impact for communities.</p>
             <a href="#projects" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Explore My Work</a>
         </div>
-        <!-- Lottie Animation -->
-        <div class="lottie-animation">
-            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_5ngs2ksb.json" background="transparent" speed="1" style="width: 100%; height: 200px;" loop autoplay></lottie-player>
+        <!-- Background Image -->
+        <div class="background-image">
+            <img src="images/mountain-background.jpg" alt="Background" style="width: 100%; height: 100%; object-fit: cover;">
         </div>
     </header>
 
@@ -71,14 +74,14 @@
             <h2 class="fw-bold text-center mb-5" data-aos="fade-up">About Me</h2>
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4" data-aos="fade-right">
-                    <img src="your-photo.jpg" alt="Sasha Lyuber" class="img-fluid rounded-circle shadow">
+                    <img src="images/your-photo.jpg" alt="Sasha Lyuber" class="img-fluid rounded-circle shadow">
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
                     <p>
-                        Hello! I'm Sasha Lyuber, a passionate data engineer and machine learning developer dedicated to enhancing social services through technology. With a strong background in software development and a deep understanding of machine learning, I focus on creating solutions that balance needs and resources, delivering immediate results and impact.
+                        Hello! I'm <strong>Sasha Lyuber</strong>, a data engineer and machine learning developer with a passion for enhancing social services. My journey in palliative care ignited a desire to leverage technology to improve community well-being. With expertise in data science and a background in software development, I create solutions that make a real difference.
                     </p>
-                    <!-- Interactive Timeline (Placeholder for future implementation) -->
-                    <!-- <div id="timeline"></div> -->
+                    <!-- Interactive Timeline Placeholder -->
+                    <!-- You can implement a timeline here using a library like TimelineJS -->
                     <a href="#contact" class="btn btn-outline-primary mt-3">Get in Touch</a>
                 </div>
             </div>
@@ -88,22 +91,22 @@
     <!-- Services Section -->
     <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">My Expertise</h2>
+            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">What I Offer</h2>
             <div class="row g-4">
                 <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
-                    <h5>Software Development</h5>
-                    <p class="text-muted">Building robust applications that address specific needs within social services.</p>
+                    <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+                    <h5>Custom Software Solutions</h5>
+                    <p class="text-muted">Developing tailored applications to meet the unique needs of social service organizations.</p>
                 </div>
                 <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
-                    <i class="fas fa-brain fa-3x text-primary mb-3"></i>
-                    <h5>Machine Learning</h5>
-                    <p class="text-muted">Implementing intelligent systems to analyze data and predict outcomes, enhancing decision-making processes.</p>
+                    <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                    <h5>Predictive Analytics</h5>
+                    <p class="text-muted">Implementing machine learning models to forecast trends and optimize resource allocation.</p>
                 </div>
                 <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
-                    <i class="fas fa-chart-bar fa-3x text-primary mb-3"></i>
-                    <h5>Data Science</h5>
-                    <p class="text-muted">Transforming complex data into meaningful insights that drive social impact.</p>
+                    <i class="fas fa-chart-pie fa-3x text-primary mb-3"></i>
+                    <h5>Data Visualization</h5>
+                    <p class="text-muted">Creating intuitive dashboards and visualizations to make data-driven decisions accessible.</p>
                 </div>
             </div>
         </div>
@@ -112,35 +115,38 @@
     <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Case Studies</h2>
+            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">My Work</h2>
             <div class="row g-4">
                 <!-- Project Card -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 shadow-sm">
+                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
                         <div class="card-body">
-                            <h5 class="card-title">Predictive Analytics for Community Outreach</h5>
-                            <p class="card-text">Developed a machine learning model to identify communities in need of support, allowing for targeted outreach and resource allocation.</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                            <h5 class="card-title">Community Outreach Predictor</h5>
+                            <p class="card-text">A machine learning model that identifies communities in need for targeted support.</p>
+                            <a href="#" class="btn btn-outline-primary">View Case Study</a>
                         </div>
                     </div>
                 </div>
                 <!-- Project Card -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card h-100 shadow-sm">
+                        <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
                         <div class="card-body">
                             <h5 class="card-title">Real-Time Data Dashboard</h5>
-                            <p class="card-text">Created an interactive dashboard visualizing key metrics for social service organizations, improving transparency and efficiency.</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                            <p class="card-text">An interactive dashboard visualizing key metrics for social service organizations.</p>
+                            <a href="#" class="btn btn-outline-primary">View Case Study</a>
                         </div>
                     </div>
                 </div>
                 <!-- Project Card -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card h-100 shadow-sm">
+                        <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
                         <div class="card-body">
-                            <h5 class="card-title">Mobile App for Volunteer Coordination</h5>
-                            <p class="card-text">Developed a user-friendly app to streamline volunteer management, enhancing community engagement and participation.</p>
-                            <a href="#" class="btn btn-outline-primary">Read More</a>
+                            <h5 class="card-title">Volunteer Coordination App</h5>
+                            <p class="card-text">A mobile app to streamline volunteer management and enhance engagement.</p>
+                            <a href="#" class="btn btn-outline-primary">View Case Study</a>
                         </div>
                     </div>
                 </div>
@@ -155,11 +161,14 @@
             <div class="row">
                 <div class="col-md-6" data-aos="fade-right">
                     <h4>What is Data Science?</h4>
-                    <p>Data science involves extracting insights and knowledge from data using various techniques and algorithms. In the context of social services, it helps organizations make informed decisions to better serve communities.</p>
+                    <p>Data science involves extracting insights and knowledge from data using various techniques and algorithms.</p>
+                    <!-- Lottie Animation -->
+                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_1pxqjqps.json" background="transparent" speed="1" style="width: 100%; height: 300px;" loop autoplay></lottie-player>
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
-                    <h4>How Machine Learning Helps</h4>
-                    <p>Machine learning enables systems to learn from data and improve over time. It can predict trends, identify patterns, and automate processes, leading to more effective social programs.</p>
+                    <h4>How It Helps Social Services</h4>
+                    <p>By analyzing data trends, social services can allocate resources more effectively and predict community needs.</p>
+                    <!-- You can include an infographic here if you have one -->
                 </div>
             </div>
             <!-- Expandable Content -->
@@ -181,34 +190,21 @@
         </div>
     </section>
 
-    <!-- Data Visualization Showcase -->
-    <section id="visualizations" class="py-5">
-        <div class="container">
-            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Impactful Visualizations</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8" data-aos="zoom-in">
-                    <!-- Embed a real visualization related to social services -->
-                    <iframe src="https://public.tableau.com/views/SampleDashboard/Overview?:embed=y&:display_count=yes&:showTabs=y" width="100%" height="500"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-5 bg-light">
+    <section id="testimonials" class="py-5">
         <div class="container">
-            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Testimonials</h2>
+            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">What People Say</h2>
             <div class="swiper-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
                     <!-- Testimonial Slide -->
                     <div class="swiper-slide">
                         <div class="testimonial p-4">
-                            <p class="text-muted">"Sasha's expertise in machine learning provided us with tools that significantly improved our service delivery."</p>
+                            <p class="text-muted">"Sasha's data solutions transformed how we operate, leading to a 30% increase in efficiency."</p>
                             <h6 class="fw-bold mt-3">Alex Martinez</h6>
                             <p class="text-muted small">Program Manager, Helping Hands Organization</p>
                         </div>
                     </div>
-                    <!-- Additional testimonials can be added here -->
+                    <!-- Additional testimonial slides -->
                 </div>
                 <!-- Swiper Pagination -->
                 <div class="swiper-pagination"></div>
@@ -216,18 +212,8 @@
         </div>
     </section>
 
-    <!-- Call-to-Action Section -->
-    <section id="cta" class="py-5 text-white text-center position-relative">
-        <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.7);"></div>
-        <div class="container position-relative">
-            <h2 class="fw-bold mb-4" data-aos="fade-in">Let's Make a Difference Together</h2>
-            <p class="mb-4" data-aos="fade-in" data-aos-delay="100">Partner with me to create solutions that truly matter.</p>
-            <a href="#contact" class="btn btn-primary btn-lg" data-aos="fade-in" data-aos-delay="200">Contact Me</a>
-        </div>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact" class="py-5 bg-light">
         <div class="container">
             <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Get in Touch</h2>
             <div class="row justify-content-center">
