@@ -35,28 +35,11 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Data Visualization with Chart.js
-const ctx = document.getElementById('dataChart').getContext('2d');
-const dataChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-            label: 'Sample Data',
-            data: [3, 2, 3, 5, 4, 6, 5],
-            backgroundColor: 'rgba(107, 142, 35, 0.2)',
-            borderColor: 'rgba(107, 142, 35, 1)',
-            borderWidth: 2,
-            pointBackgroundColor: 'rgba(107, 142, 35, 1)',
-            tension: 0.4
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            legend: {
-                display: false
-            }
-        }
-    }
-});
+// Lottie Animation Initialization
+// (No additional JS needed if using <lottie-player> element)
+
+// Optional: Implement Interactive Timeline
+// You can use libraries like vis.js or TimelineJS
+
+// Optional: Form Submission Handling
+// Add your form submission logic here
