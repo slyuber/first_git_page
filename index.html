@@ -2,58 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Sasha Lyuber - Data Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-light">
-    <header class="bg-dark text-white text-center py-5">
-        <h1>Welcome to My GitHub Profile Site</h1>
-        <p class="lead">Sharing my projects, thoughts, and professional journey</p>
-    </header>
-    <main class="container my-5">
-        <section id="about" class="mb-5">
-            <h2>About Me</h2>
-            <p>Hello! I am Sasha Lyuber. I am passionate about data science, software development, and creating impactful projects. This is my personal site where I share my work and experiences.</p>
-        </section>
-        <section id="projects" class="mb-5">
-            <h2>Projects</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Project One</h5>
-                            <p class="card-text">A brief description of my first project.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Two</h5>
-                            <p class="card-text">A brief description of my second project.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Three</h5>
-                            <p class="card-text">A brief description of my third project.</p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
+<body class="font-inter bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">Sasha Lyuber</a>
+            <div>
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 mx-3">Home</a>
+                <a href="profile.html" class="text-gray-600 hover:text-blue-600 mx-3">Profile</a>
+                <a href="projects.html" class="text-gray-600 hover:text-blue-600 mx-3">Projects</a>
             </div>
-        </section>
-    </main>
-    <footer class="text-center py-4">
-        <p>Connect with me on <a href="https://github.com/slyuber" class="text-dark"><i class="fab fa-github"></i> GitHub</a></p>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-20 text-center">
+        <h1 class="text-5xl font-bold text-gray-800" data-aos="fade-up">Human-Centric Data Solutions</h1>
+        <p class="mt-6 text-lg text-gray-600" data-aos="fade-up" data-aos-delay="200">
+            Transforming data into impactful insights through innovative engineering and science.
+        </p>
+        <a href="projects.html" class="mt-8 inline-block bg-blue-600 text-white px-8 py-3 rounded-full shadow-lg hover:bg-blue-500" data-aos="fade-up" data-aos-delay="400">
+            View My Projects
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow mt-20">
+        <div class="container mx-auto px-6 py-6 text-center">
+            <p class="text-gray-600">© 2024 Sasha Lyuber. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
 </body>
 </html>
