@@ -2,35 +2,67 @@
 <html lang="en">
 <head>
     <!-- Same head section as the Home Page -->
+    <meta charset="UTF-8">
+    <title>Sasha Lyuber - Projects</title>
+    <!-- Include necessary styles and scripts -->
 </head>
-<body class="font-inter bg-gray-50">
+<body class="bg-gray-50 text-gray-800">
+
     <!-- Navigation Bar -->
     <!-- Copy the navigation bar from the Home Page -->
 
     <!-- Projects Section -->
     <section class="container mx-auto px-6 py-20">
-        <h2 class="text-4xl font-bold text-center text-gray-800" data-aos="fade-up">My Projects</h2>
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 class="text-5xl font-bold text-center mb-12">My Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project Card -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden" data-aos="fade-up">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden" id="project1">
                 <img src="project1.jpg" alt="Project One" class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h3 class="text-2xl font-semibold text-gray-800">Project One</h3>
-                    <p class="mt-4 text-gray-600">
+                    <h3 class="text-2xl font-bold mb-2">Project One</h3>
+                    <p class="text-gray-700 mb-4">
                         A brief description of your first project highlighting its features and impact.
                     </p>
-                    <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Learn More</a>
+                    <a href="#" class="text-green-600 font-semibold hover:underline">Learn More</a>
                 </div>
             </div>
-            <!-- Repeat Project Cards for other projects -->
-            <!-- Ensure to replace placeholders with actual project details and images -->
+            <!-- Repeat for other projects -->
+            <!-- Project Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden" id="project2">
+                <img src="project2.jpg" alt="Project Two" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Project Two</h3>
+                    <p class="text-gray-700 mb-4">
+                        A brief description of your second project highlighting its features and impact.
+                    </p>
+                    <a href="#" class="text-green-600 font-semibold hover:underline">Learn More</a>
+                </div>
+            </div>
+            <!-- Project Card -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden" id="project3">
+                <img src="project3.jpg" alt="Project Three" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Project Three</h3>
+                    <p class="text-gray-700 mb-4">
+                        A brief description of your third project highlighting its features and impact.
+                    </p>
+                    <a href="#" class="text-green-600 font-semibold hover:underline">Learn More</a>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
         </div>
     </section>
 
     <!-- Footer -->
     <!-- Copy the footer from the Home Page -->
 
-    <!-- AOS JS -->
-    <!-- Include the AOS initialization script -->
+    <!-- GSAP Animations -->
+    <script>
+        gsap.from("#project1", { duration: 1, y: 50, opacity: 0 });
+        gsap.from("#project2", { duration: 1, y: 50, opacity: 0, delay: 0.2 });
+        gsap.from("#project3", { duration: 1, y: 50, opacity: 0, delay: 0.4 });
+    </script>
+    <!-- Font Awesome -->
+    <!-- Include Font Awesome script if not already included -->
 </body>
 </html>

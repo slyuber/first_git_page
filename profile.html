@@ -2,47 +2,60 @@
 <html lang="en">
 <head>
     <!-- Same head section as the Home Page -->
+    <meta charset="UTF-8">
+    <title>Sasha Lyuber - Profile</title>
+    <!-- Include necessary styles and scripts -->
 </head>
-<body class="font-inter bg-gray-50">
+<body class="bg-gray-50 text-gray-800">
+
     <!-- Navigation Bar -->
     <!-- Copy the navigation bar from the Home Page -->
 
     <!-- Profile Section -->
     <section class="container mx-auto px-6 py-20">
-        <div class="flex flex-col items-center text-center">
-            <img src="your-photo.jpg" alt="Sasha Lyuber" class="w-48 h-48 rounded-full shadow-lg" data-aos="zoom-in">
-            <h2 class="mt-6 text-4xl font-bold text-gray-800" data-aos="fade-up">Sasha Lyuber</h2>
-            <p class="mt-4 text-lg text-gray-600 max-w-2xl" data-aos="fade-up" data-aos-delay="200">
-                Passionate data engineer and scientist dedicated to creating human-centric solutions. Specializing in transforming complex data into actionable insights and developing innovative applications that make a difference.
-            </p>
-            <!-- Skills Section -->
-            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="400">
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-2xl font-semibold text-blue-600">Data Engineering</h3>
-                    <p class="mt-4 text-gray-600">
-                        Expertise in building robust data pipelines, databases, and storage solutions.
-                    </p>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-2xl font-semibold text-blue-600">Data Science</h3>
-                    <p class="mt-4 text-gray-600">
-                        Skilled in statistical analysis, machine learning, and predictive modeling.
-                    </p>
-                </div>
-                <div class="bg-white shadow-lg rounded-lg p-6">
-                    <h3 class="text-2xl font-semibold text-blue-600">Development</h3>
-                    <p class="mt-4 text-gray-600">
-                        Proficient in creating user-centric applications with modern technologies.
-                    </p>
-                </div>
+        <h2 class="text-5xl font-bold text-center mb-12">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <img src="your-photo.jpg" alt="Sasha Lyuber" class="rounded-lg shadow-lg w-full" id="profile-image">
             </div>
+            <div class="md:w-1/2 md:pl-12">
+                <p class="text-lg mb-6">
+                    With over X years of experience in data engineering and science, I specialize in creating solutions that are not only technically robust but also aligned with human needs. My approach is holistic, considering both the data and the people who interact with it.
+                </p>
+                <p class="text-lg mb-6">
+                    I have worked on numerous projects that have helped organizations make informed decisions, improve efficiency, and innovate in their respective fields.
+                </p>
+                <!-- Skills -->
+                <h3 class="text-3xl font-semibold mb-4">Skills & Expertise</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>Data Pipeline Development</li>
+                    <li>Machine Learning & AI</li>
+                    <li>Database Management</li>
+                    <li>Python, R, SQL</li>
+                    <li>Cloud Computing (AWS, GCP)</li>
+                    <!-- Add more skills as needed -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-green-600 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-4">Interested in collaborating?</h3>
+            <p class="mb-6">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <a href="mailto:sasha@example.com" class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Get in Touch</a>
         </div>
     </section>
 
     <!-- Footer -->
     <!-- Copy the footer from the Home Page -->
 
-    <!-- AOS JS -->
-    <!-- Include the AOS initialization script -->
+    <!-- GSAP Animations -->
+    <script>
+        gsap.from("#profile-image", { duration: 1, x: -100, opacity: 0 });
+    </script>
+    <!-- Font Awesome -->
+    <!-- Include Font Awesome script if not already included -->
 </body>
 </html>

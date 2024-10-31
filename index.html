@@ -2,53 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sasha Lyuber - Data Engineer</title>
+    <title>Sasha Lyuber - Human-Centric Data Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+        .beige-bg {
+            background-color: #f5f5dc;
+        }
+        .nature-gradient {
+            background: linear-gradient(135deg, #a8e6cf, #dcedc1);
+        }
+    </style>
 </head>
-<body class="font-inter bg-gray-50">
+<body class="bg-gray-50 text-gray-800">
+
     <!-- Navigation Bar -->
-    <nav class="bg-white shadow">
+    <nav class="bg-white shadow-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-600">Sasha Lyuber</a>
-            <div>
-                <a href="index.html" class="text-gray-600 hover:text-blue-600 mx-3">Home</a>
-                <a href="profile.html" class="text-gray-600 hover:text-blue-600 mx-3">Profile</a>
-                <a href="projects.html" class="text-gray-600 hover:text-blue-600 mx-3">Projects</a>
+            <a href="#" class="text-2xl font-bold text-green-600">Sasha Lyuber</a>
+            <div class="flex space-x-4">
+                <a href="index.html" class="hover:text-green-600">Home</a>
+                <a href="profile.html" class="hover:text-green-600">Profile</a>
+                <a href="projects.html" class="hover:text-green-600">Projects</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="container mx-auto px-6 py-20 text-center">
-        <h1 class="text-5xl font-bold text-gray-800" data-aos="fade-up">Human-Centric Data Solutions</h1>
-        <p class="mt-6 text-lg text-gray-600" data-aos="fade-up" data-aos-delay="200">
-            Transforming data into impactful insights through innovative engineering and science.
-        </p>
-        <a href="projects.html" class="mt-8 inline-block bg-blue-600 text-white px-8 py-3 rounded-full shadow-lg hover:bg-blue-500" data-aos="fade-up" data-aos-delay="400">
-            View My Projects
-        </a>
+    <section class="relative nature-gradient">
+        <div class="container mx-auto px-6 py-20 text-center">
+            <h1 class="text-5xl font-bold text-white mb-6" id="hero-title">Bridging Data and Humanity</h1>
+            <p class="text-xl text-white mb-8" id="hero-subtitle">
+                Crafting data-driven solutions that resonate with human experiences.
+            </p>
+            <a href="projects.html" class="bg-white text-green-600 px-8 py-3 rounded-full font-semibold hover:bg-green-100 transition duration-300" id="hero-button">
+                Explore My Work
+            </a>
+        </div>
+        <!-- Decorative Leaf Image -->
+        <img src="https://source.unsplash.com/1600x900/?nature,leaf" alt="Nature" class="absolute top-0 left-0 w-full h-full object-cover opacity-20">
+    </section>
+
+    <!-- About Section -->
+    <section class="container mx-auto px-6 py-20">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <img src="your-photo.jpg" alt="Sasha Lyuber" class="rounded-lg shadow-lg w-full" id="about-image">
+            </div>
+            <div class="md:w-1/2 md:pl-12">
+                <h2 class="text-4xl font-bold mb-6">About Me</h2>
+                <p class="text-lg mb-6">
+                    I am a passionate data engineer and scientist committed to creating human-centric solutions. With a focus on transforming complex data into meaningful insights, I develop innovative applications that make a real difference.
+                </p>
+                <a href="profile.html" class="text-green-600 font-semibold hover:underline">Read More</a>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white shadow mt-20">
-        <div class="container mx-auto px-6 py-6 text-center">
-            <p class="text-gray-600">© 2024 Sasha Lyuber. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2024 Sasha Lyuber. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0">
+                <a href="https://github.com/slyuber" target="_blank" class="hover:text-green-400">
+                    <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a href="mailto:sasha@example.com" class="hover:text-green-400">
+                    <i class="fas fa-envelope fa-lg"></i>
+                </a>
+                <!-- Add other social links if needed -->
+            </div>
         </div>
     </footer>
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- GSAP Animations -->
     <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-        });
+        gsap.from("#hero-title", { duration: 1, y: -50, opacity: 0 });
+        gsap.from("#hero-subtitle", { duration: 1, y: -30, opacity: 0, delay: 0.5 });
+        gsap.from("#hero-button", { duration: 1, scale: 0, opacity: 0, delay: 1 });
+        gsap.from("#about-image", { duration: 1, x: -100, opacity: 0, scrollTrigger: "#about-image" });
     </script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
 </body>
 </html>
