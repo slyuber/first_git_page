@@ -1,33 +1,73 @@
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #e0f7fa, #80deea);
-    color: #333;
-    line-height: 1.6;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
 }
-header {
-    background: #004d40;
+
+/* Hero Section */
+.hero-section {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-section .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-section h1, .hero-section p {
     color: #ffffff;
 }
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
-.card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+.hero-section .btn {
+    background-color: #6B8E23;
     border: none;
 }
-footer {
-    background: #004d40;
-    color: #ffffff;
-    padding: 1rem;
-    margin-top: 2rem;
+
+.hero-section .btn:hover {
+    background-color: #556B2F;
 }
-footer a {
+
+/* About Me Section */
+#about img {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Services Section */
+#services i {
+    color: #6B8E23;
+}
+
+/* Portfolio Section */
+#projects .card {
+    border: none;
+}
+
+#projects .card-title {
+    font-weight: 700;
+}
+
+/* Testimonials Section */
+#testimonials .p-4 {
+    background-color: #ffffff;
+}
+
+/* Contact Section */
+#contact .form-control, #contact .btn {
+    border-radius: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+}
+
+footer p, footer a {
     color: #ffffff;
+}
+
+footer a:hover {
+    color: #dddddd;
 }
