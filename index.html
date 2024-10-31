@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <title>Sasha Lyuber - Human-Centric Data Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- Animate.css -->
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Animate.css (for animations) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Swiper CSS (for testimonials slider) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -28,13 +34,13 @@
                         <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -45,23 +51,27 @@
     <header class="hero-section text-white text-center position-relative">
         <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
         <div class="container position-relative d-flex flex-column justify-content-center align-items-center" style="height: 80vh;">
-            <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Bridging Data and Humanity</h1>
-            <p class="lead mb-4 animate__animated animate__fadeInUp">Transforming data into meaningful solutions with a human touch.</p>
-            <a href="#projects" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">View My Work</a>
+            <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Connecting Data with Humanity</h1>
+            <p class="lead mb-4 animate__animated animate__fadeInUp">Harnessing the power of data for Alberta's communities.</p>
+            <a href="#projects" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Explore My Work</a>
         </div>
     </header>
 
     <!-- About Me Section -->
-    <section class="py-5" id="about">
+    <section id="about" class="py-5">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 mb-4">
-                    <img src="your-photo.jpg" alt="Sasha Lyuber" class="img-fluid rounded-circle shadow">
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <img src="images/your-photo.jpg" alt="Sasha Lyuber" class="img-fluid rounded-circle shadow">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left">
                     <h2 class="fw-bold">About Me</h2>
-                    <p class="text-muted">I'm Sasha Lyuber, a data engineer and scientist dedicated to crafting human-centric solutions. My passion lies in transforming complex data into actionable insights and developing innovative applications that resonate with users.</p>
-                    <p class="text-muted">With a background in both technology and human-centered design, I bridge the gap between data and people.</p>
+                    <p class="text-muted">
+                        I'm Sasha Lyuber, a data engineer and scientist dedicated to crafting human-centric solutions. My passion lies in transforming complex data into actionable insights and developing innovative applications that resonate with users.
+                    </p>
+                    <p class="text-muted">
+                        With a background in both technology and human-centered design, I bridge the gap between data and people.
+                    </p>
                     <a href="#contact" class="btn btn-outline-primary mt-3">Get in Touch</a>
                 </div>
             </div>
@@ -69,25 +79,25 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-5 bg-light" id="services">
+    <section id="services" class="py-5 bg-light">
         <div class="container text-center">
-            <h2 class="fw-bold mb-5">What I Do</h2>
+            <h2 class="fw-bold mb-5" data-aos="fade-up">What I Do</h2>
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="p-4">
                         <i class="fas fa-database fa-3x text-primary mb-3"></i>
                         <h5>Data Engineering</h5>
                         <p class="text-muted">Building robust data pipelines and architectures for efficient data processing.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="p-4">
                         <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
                         <h5>Data Science</h5>
                         <p class="text-muted">Applying machine learning and analytics to extract valuable insights.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="p-4">
                         <i class="fas fa-code fa-3x text-primary mb-3"></i>
                         <h5>Development</h5>
@@ -99,14 +109,14 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="py-5" id="projects">
+    <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="fw-bold text-center mb-5">Selected Projects</h2>
+            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Selected Projects</h2>
             <div class="row g-4">
                 <!-- Project Item -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
                     <div class="card shadow-sm">
-                        <img src="project1.jpg" class="card-img-top" alt="Project One">
+                        <img src="images/project1.jpg" class="card-img-top" alt="Project One">
                         <div class="card-body">
                             <h5 class="card-title">Project One</h5>
                             <p class="card-text">An innovative data solution optimizing user engagement through advanced analytics.</p>
@@ -114,11 +124,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- Repeat for other projects -->
                 <!-- Project Item -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
                     <div class="card shadow-sm">
-                        <img src="project2.jpg" class="card-img-top" alt="Project Two">
+                        <img src="images/project2.jpg" class="card-img-top" alt="Project Two">
                         <div class="card-body">
                             <h5 class="card-title">Project Two</h5>
                             <p class="card-text">A machine learning model predicting market trends with high accuracy.</p>
@@ -127,9 +136,9 @@
                     </div>
                 </div>
                 <!-- Project Item -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
                     <div class="card shadow-sm">
-                        <img src="project3.jpg" class="card-img-top" alt="Project Three">
+                        <img src="images/project3.jpg" class="card-img-top" alt="Project Three">
                         <div class="card-body">
                             <h5 class="card-title">Project Three</h5>
                             <p class="card-text">A cloud-based data pipeline enhancing data processing efficiency.</p>
@@ -138,44 +147,49 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4">
+            <div class="text-center mt-4" data-aos="fade-up">
                 <a href="projects.html" class="btn btn-primary">View All Projects</a>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-5 bg-light" id="testimonials">
+    <section id="testimonials" class="py-5 bg-light">
         <div class="container">
-            <h2 class="fw-bold text-center mb-5">Testimonials</h2>
-            <div class="row">
-                <!-- Testimonial Item -->
-                <div class="col-md-6 mb-4">
-                    <div class="p-4 border rounded shadow-sm">
-                        <p class="text-muted">"Sasha's expertise in data engineering transformed our business analytics, providing insights we never thought possible."</p>
-                        <h6 class="fw-bold mt-3">John Doe</h6>
-                        <p class="text-muted small">CEO, Tech Solutions Inc.</p>
+            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Testimonials</h2>
+            <div class="swiper-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial Slide -->
+                    <div class="swiper-slide">
+                        <div class="testimonial p-4">
+                            <p class="text-muted">"Sasha's expertise in data engineering transformed our business analytics, providing insights we never thought possible."</p>
+                            <h6 class="fw-bold mt-3">John Doe</h6>
+                            <p class="text-muted small">CEO, Tech Solutions Inc.</p>
+                        </div>
                     </div>
-                </div>
-                <!-- Testimonial Item -->
-                <div class="col-md-6 mb-4">
-                    <div class="p-4 border rounded shadow-sm">
-                        <p class="text-muted">"Working with Sasha was a pleasure. Their ability to bridge technical complexity with user-friendly solutions is exceptional."</p>
-                        <h6 class="fw-bold mt-3">Jane Smith</h6>
-                        <p class="text-muted small">CTO, Innovative Apps</p>
+                    <!-- Testimonial Slide -->
+                    <div class="swiper-slide">
+                        <div class="testimonial p-4">
+                            <p class="text-muted">"Working with Sasha was a pleasure. Their ability to bridge technical complexity with user-friendly solutions is exceptional."</p>
+                            <h6 class="fw-bold mt-3">Jane Smith</h6>
+                            <p class="text-muted small">CTO, Innovative Apps</p>
+                        </div>
                     </div>
+                    <!-- Add more slides as needed -->
                 </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="py-5" id="contact">
+    <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="fw-bold text-center mb-5">Get in Touch</h2>
+            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Get in Touch</h2>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <form>
+                    <form data-aos="fade-up" data-aos-delay="100">
                         <div class="mb-3">
                             <label for="name" class="form-label">Your Name</label>
                             <input type="text" class="form-control" id="name" placeholder="John Doe">
@@ -190,7 +204,7 @@
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
-                    <div class="text-center mt-4">
+                    <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="200">
                         <p class="text-muted">Or reach me at <a href="mailto:sasha@example.com">sasha@example.com</a></p>
                     </div>
                 </div>
@@ -210,9 +224,14 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
