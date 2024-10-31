@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sasha Lyuber - Human-Centric Data Solutions</title>
+    <title>Sasha Lyuber - Data Science for Social Good</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -14,15 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- AOS (Animate On Scroll) CSS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Swiper CSS (for testimonials slider) -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3 fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Sasha Lyuber</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,7 +32,7 @@
                         <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -50,106 +48,95 @@
     <!-- Hero Section -->
     <header class="hero-section text-white text-center position-relative">
         <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
-        <div class="container position-relative d-flex flex-column justify-content-center align-items-center" style="height: 80vh;">
-            <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Connecting Data with Humanity</h1>
-            <p class="lead mb-4 animate__animated animate__fadeInUp">Harnessing the power of data for Alberta's communities.</p>
-            <a href="#projects" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Explore My Work</a>
+        <div class="container position-relative d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+            <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Data Science for Social Good</h1>
+            <p class="lead mb-4 animate__animated animate__fadeInUp">Empowering Alberta's communities through data-driven insights.</p>
+            <a href="#projects" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Discover My Work</a>
         </div>
     </header>
 
-    <!-- About Me Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 mb-4" data-aos="fade-right">
-                    <img src="images/your-photo.jpg" alt="Sasha Lyuber" class="img-fluid rounded-circle shadow">
-                </div>
-                <div class="col-md-6" data-aos="fade-left">
-                    <h2 class="fw-bold">About Me</h2>
-                    <p class="text-muted">
-                        I'm Sasha Lyuber, a data engineer and scientist dedicated to crafting human-centric solutions. My passion lies in transforming complex data into actionable insights and developing innovative applications that resonate with users.
-                    </p>
-                    <p class="text-muted">
-                        With a background in both technology and human-centered design, I bridge the gap between data and people.
-                    </p>
-                    <a href="#contact" class="btn btn-outline-primary mt-3">Get in Touch</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-5" data-aos="fade-up">What I Do</h2>
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">My Services</h2>
             <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="p-4">
-                        <i class="fas fa-database fa-3x text-primary mb-3"></i>
-                        <h5>Data Engineering</h5>
-                        <p class="text-muted">Building robust data pipelines and architectures for efficient data processing.</p>
-                    </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-chart-pie fa-3x text-primary mb-3"></i>
+                    <h5>Data Analysis</h5>
+                    <p class="text-muted">Transforming raw data into actionable insights to drive social impact.</p>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="p-4">
-                        <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
-                        <h5>Data Science</h5>
-                        <p class="text-muted">Applying machine learning and analytics to extract valuable insights.</p>
-                    </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-project-diagram fa-3x text-primary mb-3"></i>
+                    <h5>Data Visualization</h5>
+                    <p class="text-muted">Creating intuitive visualizations that make complex data accessible.</p>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="p-4">
-                        <i class="fas fa-code fa-3x text-primary mb-3"></i>
-                        <h5>Development</h5>
-                        <p class="text-muted">Creating user-centric applications that bring data solutions to life.</p>
-                    </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+                    <h5>Consulting</h5>
+                    <p class="text-muted">Collaborating with organizations to implement data-driven strategies.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Data Visualization Showcase -->
+    <section id="visualizations" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Data Visualizations</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="zoom-in">
+                    <canvas id="dataChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects" class="py-5">
         <div class="container">
-            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Selected Projects</h2>
+            <h2 class="fw-bold text-center mb-5" data-aos="fade-up">Featured Projects</h2>
             <div class="row g-4">
-                <!-- Project Item -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="card shadow-sm">
-                        <img src="images/project1.jpg" class="card-img-top" alt="Project One">
+                <!-- Project Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Project One</h5>
-                            <p class="card-text">An innovative data solution optimizing user engagement through advanced analytics.</p>
+                            <h5 class="card-title">Community Health Dashboard</h5>
+                            <p class="card-text">An interactive platform providing real-time health statistics to local communities.</p>
                             <a href="#" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <!-- Project Item -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="card shadow-sm">
-                        <img src="images/project2.jpg" class="card-img-top" alt="Project Two">
+                <!-- Project Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Project Two</h5>
-                            <p class="card-text">A machine learning model predicting market trends with high accuracy.</p>
+                            <h5 class="card-title">Education Data Analysis</h5>
+                            <p class="card-text">Analyzing educational trends to support policy-making in Alberta's schools.</p>
                             <a href="#" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <!-- Project Item -->
-                <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="card shadow-sm">
-                        <img src="images/project3.jpg" class="card-img-top" alt="Project Three">
+                <!-- Project Card -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-sm">
                         <div class="card-body">
-                            <h5 class="card-title">Project Three</h5>
-                            <p class="card-text">A cloud-based data pipeline enhancing data processing efficiency.</p>
+                            <h5 class="card-title">Environmental Impact Studies</h5>
+                            <p class="card-text">Visualizing environmental data to promote sustainable practices.</p>
                             <a href="#" class="btn btn-outline-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4" data-aos="fade-up">
-                <a href="projects.html" class="btn btn-primary">View All Projects</a>
-            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta" class="py-5 text-white text-center position-relative">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.7);"></div>
+        <div class="container position-relative">
+            <h2 class="fw-bold mb-4" data-aos="fade-in">Ready to Harness the Power of Data?</h2>
+            <p class="mb-4" data-aos="fade-in" data-aos-delay="100">Let's collaborate to make a positive impact in our communities.</p>
+            <a href="#contact" class="btn btn-primary btn-lg" data-aos="fade-in" data-aos-delay="200">Contact Me</a>
         </div>
     </section>
 
@@ -162,22 +149,14 @@
                     <!-- Testimonial Slide -->
                     <div class="swiper-slide">
                         <div class="testimonial p-4">
-                            <p class="text-muted">"Sasha's expertise in data engineering transformed our business analytics, providing insights we never thought possible."</p>
-                            <h6 class="fw-bold mt-3">John Doe</h6>
-                            <p class="text-muted small">CEO, Tech Solutions Inc.</p>
+                            <p class="text-muted">"Sasha's data insights have been invaluable to our organization's outreach programs."</p>
+                            <h6 class="fw-bold mt-3">Emily Johnson</h6>
+                            <p class="text-muted small">Director, Community Services</p>
                         </div>
                     </div>
-                    <!-- Testimonial Slide -->
-                    <div class="swiper-slide">
-                        <div class="testimonial p-4">
-                            <p class="text-muted">"Working with Sasha was a pleasure. Their ability to bridge technical complexity with user-friendly solutions is exceptional."</p>
-                            <h6 class="fw-bold mt-3">Jane Smith</h6>
-                            <p class="text-muted small">CTO, Innovative Apps</p>
-                        </div>
-                    </div>
-                    <!-- Add more slides as needed -->
+                    <!-- Additional testimonials can be added here -->
                 </div>
-                <!-- Add Pagination -->
+                <!-- Swiper Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
         </div>
@@ -200,12 +179,12 @@
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Your Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="How can I help you?"></textarea>
+                            <textarea class="form-control" id="message" rows="5" placeholder="How can I assist you?"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                     <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="200">
-                        <p class="text-muted">Or reach me at <a href="mailto:sasha@example.com">sasha@example.com</a></p>
+                        <p class="text-muted">Or email me directly at <a href="mailto:sasha@example.com">sasha@example.com</a></p>
                     </div>
                 </div>
             </div>
@@ -231,6 +210,8 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>

@@ -3,12 +3,14 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #333333;
     background-color: #f9f6f1;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Navigation Bar */
 .navbar {
     background-color: transparent;
 }
@@ -23,8 +25,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #6B8E23;
 }
 
+.navbar.fixed-top {
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Hero Section */
 .hero-section {
-    background-image: url('images/mountain-background.jpg');
+    background-image: url('https://source.unsplash.com/1600x900/?mountain,alberta');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -48,17 +59,33 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #556B2F;
 }
 
-.section-title {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+/* Sections */
+section {
+    padding: 60px 0;
 }
 
+/* Services */
 #services i {
     color: #6B8E23;
 }
 
+#services h5 {
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+#services p {
+    font-size: 0.95rem;
+}
+
+/* Data Visualization */
+#visualizations canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Projects */
 #projects .card {
-    border: none;
     transition: transform 0.3s;
 }
 
@@ -70,6 +97,16 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+/* Call-to-Action */
+#cta {
+    background-image: url('https://source.unsplash.com/1600x900/?nature');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #ffffff;
+}
+
+/* Testimonials */
 #testimonials .testimonial {
     background-color: #ffffff;
     border-radius: 10px;
@@ -85,11 +122,23 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #6B8E23;
 }
 
+/* Contact Form */
 #contact .form-control,
 #contact .btn {
     border-radius: 0;
 }
 
+#contact .btn-primary {
+    background-color: #6B8E23;
+    border-color: #6B8E23;
+}
+
+#contact .btn-primary:hover {
+    background-color: #556B2F;
+    border-color: #556B2F;
+}
+
+/* Footer */
 footer {
     background-color: #333333;
 }
@@ -104,6 +153,7 @@ footer a:hover {
     color: #dddddd;
 }
 
+/* Buttons */
 .btn-primary {
     background-color: #6B8E23;
     border-color: #6B8E23;
@@ -124,18 +174,15 @@ footer a:hover {
     color: #ffffff;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 767px) {
     .hero-section {
-        height: 60vh;
+        height: 70vh;
     }
     .navbar .nav-link {
         padding-left: 0;
